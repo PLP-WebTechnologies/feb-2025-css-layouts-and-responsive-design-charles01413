@@ -1,0 +1,77 @@
+/* General reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Grid layout for content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+    }
+}
